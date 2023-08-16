@@ -3,6 +3,7 @@
     "testcafe": "^3.1.0"
   },
   "scripts": {
-    "test": "testcafe chrome mainTest.js"
+    "test": "testcafe chrome \"C:\\Users\\coran\\OneDrive - Universidad Nacional Abierta y a Distancia\\Documents\\TestCafe\\DemoBlaze Testing\\mainSignUp.js"
   }
+    
 }
