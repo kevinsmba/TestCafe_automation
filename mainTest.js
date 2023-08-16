@@ -8,5 +8,5 @@ test('My first test', async t => {
     const mainActions = new MainActions();
     await mainActions.typeName('John Doe');
     await mainActions.submitName();
-    await t.expect(mainActions.articleHeader().innerText).eql('Thank you, John Doe!');git 
+    await t.expect(mainActions.articleHeader().innerText).eql('Thank you, John Doe!');
 });

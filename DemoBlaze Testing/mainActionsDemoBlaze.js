@@ -1,4 +1,4 @@
-import DemoBlazePage from './DemoBlazePage.js';
+import demoblazeSelectors from './DemoBlazePage.js';
 import { t } from 'testcafe';
 
 const mainSelectors = new demoblazeSelectors();

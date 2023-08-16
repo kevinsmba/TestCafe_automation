@@ -1,7 +1,7 @@
-import mainActionsDemoBlaze from "./mainActionsDemoBlaze.js";
+import MainActionsDemoBlaze from "./mainActionsDemoBlaze.js";
 import { t } from 'testcafe';
 
-fixture('Complette the sign up for a new customer')
+fixture('Complete the sign up for a new customer')
     .page('https://demoblaze.com/');
 
 test('Complete the sign up process', async t => {
