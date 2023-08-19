@@ -1,10 +1,17 @@
 import { Selector } from 'testcafe';
 
-export default class MainPage {
+export class demoblazeSelectors {
     constructor() {
-        this.nameDev = Selector('#developer-name');
-        this.submitButton = Selector('#submit-button');
-        this.articleHeader = Selector('#article-header');
         this.signUp = Selector('#signin2');
+        this.typeUsername = Selector('#sign-username');
+        this.typePassword = Selector('#sign-password');
+        this.submitAccount = Selector('button.btn.btn-primary').withText('Sign up');
+    }
+}
+
+export class DropdownSelectors {
+    constructor() {
+        this.dropDownList = Selector('#preferred-interface');
+        this.testCafeInterface = this.dropDownList.find('option');
     }
 }
