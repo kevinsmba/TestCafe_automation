@@ -8,4 +8,5 @@ fixture('Complete the sign up for a new customer')
 test('Select an option from the Dropdown', async t => {
     const dropdownBoth = new ActionsDropdown();
     await dropdownBoth.selectOptionDropdown();
+    //TEST
 });
