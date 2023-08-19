@@ -1,4 +1,4 @@
-import { ActionsDropdown, mainActionsDemoBlaze } from './mainActions.js';
+import { ActionsDropdown, mainActionsDemoBlaze } from '../mainActions.js';
 import { t } from 'testcafe';
 
 
