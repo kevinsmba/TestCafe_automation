@@ -1,4 +1,4 @@
-import MainActionsDemoBlaze from "./mainActionsDemoBlaze.js";
+import { MainActionsDemoBlaze } from "./mainActionsDemoBlaze.js";
 import { t } from 'testcafe';
 
 

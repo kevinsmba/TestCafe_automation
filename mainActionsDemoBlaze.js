@@ -1,25 +1,35 @@
-import demoblazeSelectors from './DemoBlazePage.js';
+import  { demoblazeSelectors , DropdownSelectors } from './DemoBlazePage.js';
 import { t } from 'testcafe';
 
 const mainSelectors = new demoblazeSelectors();
-export default class MainActionsDemoBlaze {
-    constructor() {}
+export class MainActionsDemoBlaze {
+    constructor() { }
 
     async clickSignUp() {
         await t.click(mainSelectors.signUp);
     }
-    async TypeUsername(username){
+    async TypeUsername(username) {
         await t.typeText(mainSelectors.typeUsername, username);
     }
-    async TypePassword(password){
+    async TypePassword(password) {
         await t.typeText(mainSelectors.typePassword, password);
     }
-    async clickSubmitAccountTrue(){
+    async clickSubmitAccountTrue() {
         await t.setNativeDialogHandler(() => true);
         await t.click(mainSelectors.submitAccount);
     }
-    async clickSubmitAccountFalse(){
+    async clickSubmitAccountFalse() {
         await t.setNativeDialogHandler(() => false);
         await t.click(mainSelectors.submitAccount);
+    }
+}
+const mainDropdown = new DropdownSelectors();
+export class ActionsDropdown {
+    constructor() { }
+    
+    async selectOptionDropdown() {
+        await t.click(mainDropdown.dropDownList);
+        await t.click(mainDropdown.testCafeInterface.withText('Both'));
+
     }
 }

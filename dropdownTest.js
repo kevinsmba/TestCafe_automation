@@ -1,14 +1,11 @@
-import MainActionsDemoBlaze from "./mainActionsDemoBlaze.js";
+import { ActionsDropdown, mainActionsDemoBlaze } from './mainActionsDemoBlaze';
 import { t } from 'testcafe';
 
 
 fixture('Complete the sign up for a new customer')
-    .page('https://demoblaze.com/');
+    .page('https://devexpress.github.io/testcafe/example/');
 
-test('Complete the sign up process', async t => {
-    const mainActionsD = new MainActionsDemoBlaze();
-    await mainActionsD.clickSignUp();
-    await mainActionsD.TypeUsername('Kevin Torres');
-    await mainActionsD.TypePassword('1234Jkln');
-    await mainActionsD.clickSubmitAccountTrue();
+test('Select an option from the Dropdown', async t => {
+    const dropdownBoth = new ActionsDropdown();
+    await dropdownBoth.selectOptionDropdown();
 });
