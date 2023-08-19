@@ -30,6 +30,5 @@ export class ActionsDropdown {
     async selectOptionDropdown() {
         await t.click(mainDropdown.dropDownList);
         await t.click(mainDropdown.testCafeInterface.withText('Both'));
-
     }
 }
